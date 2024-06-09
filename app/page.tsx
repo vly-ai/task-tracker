@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useState } from "react";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import Task from "./components/Task";
-import TextDateEntry from "./components/TextDateEntry";
-import DropdownEntry from "./components/DropdownEntry";
+import Task from "../components/generated/Task";
+import TextDateEntry from "../components/TextDateEntry";
+import DropdownEntry from "../components/DropdownEntry";
 
 export default function Home() {
   const tasks = useQuery(api.tasks.get);
